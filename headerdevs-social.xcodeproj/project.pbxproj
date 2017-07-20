@@ -37,6 +37,11 @@
 		E3597F751F1F2CC700728768 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		E3597F771F1F2E5100728768 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		E3597F791F1F336800728768 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		E3F579911F209A1A000CD3F4 /* headerdevs-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "headerdevs-social.entitlements"; sourceTree = "<group>"; };
+		E3F579921F20A582000CD3F4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E3F579941F20AD39000CD3F4 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		E3F579961F20B1F3000CD3F4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/headerdevs-social-bwxgkopzkcyxpifjezsjktlwxfct/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		E3F579971F20B1F3000CD3F4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/headerdevs-social-bwxgkopzkcyxpifjezsjktlwxfct/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		F85AC438D53E238AAC459FBF /* Pods_headerdevs_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_headerdevs_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +87,7 @@
 		E33DD1E81F1C844600112DA9 /* headerdevs-social */ = {
 			isa = PBXGroup;
 			children = (
+				E3F579911F209A1A000CD3F4 /* headerdevs-social.entitlements */,
 				E3597F721F1F2AC200728768 /* Util */,
 				E33DD1FF1F1C99C100112DA9 /* Controller */,
 				E33DD1FE1F1C99B500112DA9 /* View */,
@@ -133,6 +139,10 @@
 		F6AD7DEFBC2DF17B9B2EF838 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3F579961F20B1F3000CD3F4 /* FBSDKCoreKit.framework */,
+				E3F579971F20B1F3000CD3F4 /* FBSDKLoginKit.framework */,
+				E3F579941F20AD39000CD3F4 /* iAd.framework */,
+				E3F579921F20A582000CD3F4 /* AdSupport.framework */,
 				F85AC438D53E238AAC459FBF /* Pods_headerdevs_social.framework */,
 			);
 			name = Frameworks;
@@ -175,6 +185,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = HWPP5F66EL;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -395,6 +410,7 @@
 			baseConfigurationReference = 675677E66BAF3FB0D5EB9262 /* Pods-headerdevs-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "headerdevs-social/headerdevs-social.entitlements";
 				DEVELOPMENT_TEAM = HWPP5F66EL;
 				INFOPLIST_FILE = "headerdevs-social/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -410,6 +426,7 @@
 			baseConfigurationReference = 503FF25896AB8D7DEF5B271D /* Pods-headerdevs-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "headerdevs-social/headerdevs-social.entitlements";
 				DEVELOPMENT_TEAM = HWPP5F66EL;
 				INFOPLIST_FILE = "headerdevs-social/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
