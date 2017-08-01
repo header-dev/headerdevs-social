@@ -19,6 +19,7 @@
 		E3597F761F1F2CC700728768 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3597F751F1F2CC700728768 /* RoundBtn.swift */; };
 		E3597F781F1F2E5100728768 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3597F771F1F2E5100728768 /* FancyField.swift */; };
 		E3597F7A1F1F336800728768 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3597F791F1F336800728768 /* FancyBtn.swift */; };
+		E3B4AD681F3049B900C139D8 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B4AD671F3049B900C139D8 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E3597F751F1F2CC700728768 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		E3597F771F1F2E5100728768 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		E3597F791F1F336800728768 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		E3B4AD671F3049B900C139D8 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		E3F579911F209A1A000CD3F4 /* headerdevs-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "headerdevs-social.entitlements"; sourceTree = "<group>"; };
 		E3F579921F20A582000CD3F4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E3F579941F20AD39000CD3F4 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E33DD1EB1F1C844700112DA9 /* SignInVC.swift */,
+				E3B4AD671F3049B900C139D8 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				E33DD1EC1F1C844700112DA9 /* SignInVC.swift in Sources */,
 				E3597F761F1F2CC700728768 /* RoundBtn.swift in Sources */,
 				E33DD1EA1F1C844700112DA9 /* AppDelegate.swift in Sources */,
+				E3B4AD681F3049B900C139D8 /* FeedVC.swift in Sources */,
 				E3597F711F1F292F00728768 /* FancyView.swift in Sources */,
 				E3597F741F1F2AFA00728768 /* Constants.swift in Sources */,
 				E3597F7A1F1F336800728768 /* FancyBtn.swift in Sources */,

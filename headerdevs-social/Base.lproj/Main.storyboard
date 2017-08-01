@@ -69,11 +69,12 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsJ-gc-fs9" customClass="RoundBtn" customModule="headerdevs_social" customModuleProvider="target">
                                 <rect key="frame" x="112.5" y="230" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.23770797252655029" green="0.35133534669876099" blue="0.59414815902709961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="0ia-r5-1GE"/>
                                     <constraint firstAttribute="height" constant="150" id="FfN-9u-d0Y"/>
                                 </constraints>
-                                <state key="normal" image="facebook"/>
+                                <state key="normal" image="f"/>
                                 <connections>
                                     <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ray-aU-YTi"/>
                                 </connections>
@@ -129,15 +130,51 @@
                     <connections>
                         <outlet property="emailField" destination="Krh-v4-UUm" id="cSn-R0-WC0"/>
                         <outlet property="pwdField" destination="stO-Zn-EPt" id="FF6-49-62W"/>
+                        <segue destination="iy3-YG-QeO" kind="show" identifier="goToFeed" id="QnC-3v-NMZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
+        <!--FeedVC-->
+        <scene sceneID="OvT-Jf-mFY">
+            <objects>
+                <viewController id="iy3-YG-QeO" customClass="FeedVC" customModule="headerdevs_social" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rXm-hb-X8N"/>
+                        <viewControllerLayoutGuide type="bottom" id="VNM-iG-AIh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4aT-jZ-WQm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXl-Mf-fRM">
+                                <rect key="frame" x="141" y="301" width="92" height="65"/>
+                                <state key="normal" image="sign-out"/>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="iy3-YG-QeO" eventType="touchUpInside" id="kxl-Ls-Xni"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.1176470588" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JXl-Mf-fRM" firstAttribute="centerY" secondItem="4aT-jZ-WQm" secondAttribute="centerY" id="U6r-Cm-XZq"/>
+                            <constraint firstItem="JXl-Mf-fRM" firstAttribute="centerX" secondItem="4aT-jZ-WQm" secondAttribute="centerX" id="xxT-fv-L1m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="SVw-BA-Z4K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="px1-uc-V6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="38"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="facebook" width="256" height="256"/>
+        <image name="f" width="352" height="328"/>
         <image name="idea" width="512" height="512"/>
+        <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
